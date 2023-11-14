@@ -177,6 +177,7 @@ footer {
   background-color: var(--lightgray);
   padding: 60px 24px;
 }
+
 footer > h2 {
   font-size: 28px;
   font-weight: 600; /* Semi-bold */
@@ -195,9 +196,7 @@ footer > .grid {
   gap: 12px;
 }
 /* -------------------------------------- */
-
 /* Once upon ----------------------------- */
-
 .once-upon-container {
   width: 100%;
   display: flex;
@@ -207,13 +206,16 @@ footer > .grid {
   padding: 24px 0px;
   gap: 12px;
 }
+
 .once-upon-text {
   width: calc(44% - 12px);
   margin-left: 24px;
 }
+
 .once-upon-text h2 {
   margin: unset;
 }
+
 .once-upon-img-container {
   position: relative;
   width: 56%;
@@ -221,6 +223,7 @@ footer > .grid {
   background-color: var(--blue);
   z-index: 1;
 }
+
 .once-upon-img-top {
   position: absolute;
   z-index: 2;

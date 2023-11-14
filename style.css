@@ -3,6 +3,7 @@
   --offblack: rgb(25, 25, 25);
   --offwhite: rgb(243, 236, 236);
   --lightgray: #f7f7f7;
+  --lightergray: #cacaca;
 }
 
 * {
@@ -31,6 +32,7 @@ a:active {
   height: 32px;
   background-color: var(--offblack);
   color: white;
+  padding: 5px 10px;
 }
 
 .pointer {
@@ -121,6 +123,28 @@ nav.flex {
 .campaign > h2 {
   font-size: 20px;
   font-weight: 600; /* Semi-bold */
+  margin: 75px 0 5px 0;
+}
+
+.campaign > input[name="email"],
+.campaign > label {
+  font-size: 14px;
+  font-weight: 400; /* Semi-bold */
+}
+
+.campaign > input[name="email"] {
+  border: 1px solid var(--offblack);
+  padding: 0 10px;
+  width: 215px;
+  height: 34px;
+}
+
+::placeholder {
+  color: var(--lightergray);
+}
+
+.campaign > p {
+  margin: 0 0 24px 0;
 }
 /* -------------------------------------- */
 

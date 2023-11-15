@@ -169,11 +169,20 @@ nav.flex {
   background-repeat: no-repeat;
 }
 
+.product:nth-child(1) > .img-container:active,
+.product:nth-child(4) > .img-container:active {
+  background-image: url("images/jacket_preview_green_v1_s.png");
+}
 .product:nth-child(2) > .img-container,
 .product:nth-child(3) > .img-container {
   background-image: url("images/jacket_preview_green_v1_s.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.product:nth-child(2) > .img-container:active,
+.product:nth-child(3) > .img-container:active {
+  background-image: url("images/jacket_preview_black_v1_s.png");
 }
 
 .product-info {

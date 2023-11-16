@@ -3,7 +3,9 @@
   --offblack: rgb(25, 25, 25);
   --offwhite: rgb(243, 236, 236);
   --lightgray: #f7f7f7;
-  --lightergray: #cacaca;
+  --darkergray: #cacaca;
+  --maroon: #872822;
+  --ketchup: #fe400f;
 }
 
 * {
@@ -12,7 +14,7 @@
 
 body {
   /* background-color: var(--offwhite); */
-  color: var(--offblack);
+  color: var(--maroon);
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
 }
@@ -21,19 +23,17 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: var(--offblack);
+  color: var(--maroon);
   text-decoration: none;
 }
 
 .btn {
-  all: unset;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  width: 135px;
-  height: 32px;
-  background-color: var(--offblack);
+  border: none;
+  outline: none;
   color: white;
-  padding: 5px 10px;
   text-align: center;
+  font-size: 16px;
+  font-weight: 500; /* Medium */
 }
 
 .pointer {
@@ -49,7 +49,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: 500; /* Medium */
+  font-weight: 700; /* Bold */
 }
 
 p {
@@ -84,9 +84,8 @@ section {
 header {
   align-items: center;
   justify-content: space-between;
-
-  background-color: transparent; /* Background fallback? */
-  background-image: url("images/hero-03.png");
+  background-color: var(--lightgray); /* Background fallback? */
+  /* background-image: url("images/hero-03.png"); */
   background-position: center;
   background-repeat: no-repeat;
   height: 925px;
@@ -103,19 +102,24 @@ nav.flex {
   width: 100%;
 }
 
-.hero h2 {
-  font-size: 20px;
-  font-weight: 600; /* Semi-bold */
+.hero .card {
+  padding: 0 76px 240px 0;
 }
 
-.hero .card {
-  padding: 0 160px 240px 0;
+.hero .btn {
+  background-color: var(--ketchup);
+  /* padding: 4px, 16px; */
+  width: 126px;
+  height: 36px;
+  line-height: 21px;
+  letter-spacing: 0em;
 }
 /* -------------------------------------- */
 
 /* Campaign ----------------------------- */
 .campaign {
-  background-image: url("images/campaign-03.png");
+  background-color: var(--lightgray);
+  /* background-image: url("images/campaign-03.png"); */
   background-position: top;
   background-repeat: no-repeat;
   padding-top: 925px;
@@ -141,11 +145,21 @@ nav.flex {
 }
 
 ::placeholder {
-  color: var(--lightergray);
+  color: var(--darkergray);
 }
 
 .campaign > p {
   margin: 0 0 24px 0;
+}
+
+.campaign .btn {
+  background-color: var(--maroon);
+  /* padding: 4px, 16px; */
+  width: 126px;
+  height: 36px;
+  line-height: 21px;
+  letter-spacing: 0em;
+  margin-top: 4px;
 }
 /* -------------------------------------- */
 
@@ -162,28 +176,19 @@ nav.flex {
   height: 100%;
 }
 
-.product:nth-child(1) > .img-container,
+/* .product:nth-child(1) > .img-container,
 .product:nth-child(4) > .img-container {
   background-image: url("images/jacket_preview_black_v1_s.png");
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
-.product:nth-child(1) > .img-container:active,
-.product:nth-child(4) > .img-container:active {
-  background-image: url("images/jacket_preview_green_v1_s.png");
-}
-.product:nth-child(2) > .img-container,
+/* .product:nth-child(2) > .img-container,
 .product:nth-child(3) > .img-container {
   background-image: url("images/jacket_preview_green_v1_s.png");
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.product:nth-child(2) > .img-container:active,
-.product:nth-child(3) > .img-container:active {
-  background-image: url("images/jacket_preview_black_v1_s.png");
-}
+} */
 
 .product-info {
   justify-content: space-between;
@@ -194,6 +199,17 @@ nav.flex {
 .product {
   width: calc(50% - 8px);
   height: 280px;
+}
+
+.btn.more {
+  background-color: transparent;
+  color: var(--maroon);
+  border: 1px solid var(--maroon);
+  /* padding: 4px, 16px; */
+  width: 80px;
+  height: 36px;
+  line-height: 21px;
+  letter-spacing: 0em;
 }
 /* -------------------------------------- */
 
@@ -212,6 +228,18 @@ footer h3 {
   font-weight: 600; /* Semi-bold */
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.language {
+  width: fit-content;
+  position: relative;
+  margin: 14px 0 38px 0;
+}
+
+.language > img {
+  position: absolute;
+  bottom: -2px;
+  right: -30px;
 }
 
 footer > .grid {
@@ -238,14 +266,15 @@ footer > .grid {
 }
 .once-upon-text h2 {
   margin: unset;
+  width: 75%;
 }
 .once-upon-img-container {
   position: relative;
   width: 56%;
   height: 290px;
-  background-color: var(--lightergray);
+  background-color: var(--lightgray);
   z-index: 1;
-  background-image: url("images/solcell_preview1_s.png");
+  /* background-image: url("images/solcell_preview1_s.png"); */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -254,7 +283,7 @@ footer > .grid {
   z-index: 2;
   width: 162px;
   height: 162px;
-  background-color: var(--offblack);
+  background-color: var(--darkergray);
   bottom: -14%;
   right: 60%;
 }

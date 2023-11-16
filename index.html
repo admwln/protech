@@ -116,9 +116,15 @@
   <section class="reminder flex column"></section>
   <footer class="flex column">
     <h2>ProTech</h2>
-    <div class="language pointer">
-      <span>Språk</span>
-      <img src="images/arrow-down.svg" alt="" />
+    <div class="language">
+      <button class="language-button pointer">
+        <span>Språk</span>
+        <img src="images/arrow-down.svg" alt="" />
+      </button>
+      <div class="language-menu pointer flex column">
+        <div class="swedish selected">Svenska</div>
+        <div class="english">English</div>
+      </div>
     </div>
     <div class="grid">
       <div class="flex column">
@@ -145,6 +151,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

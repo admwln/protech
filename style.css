@@ -231,15 +231,48 @@ footer h3 {
 }
 
 .language {
+  position: relative;
+}
+
+.language-button {
+  all: unset;
+  background-color: transparent;
   width: fit-content;
   position: relative;
   margin: 14px 0 38px 0;
+  user-select: none;
 }
 
-.language > img {
+.language-button > img {
   position: absolute;
   bottom: -2px;
   right: -30px;
+  transition: all 200ms ease-out;
+}
+
+.language-menu {
+  display: none;
+  position: absolute;
+  bottom: 12px;
+  left: 76px;
+}
+
+.language.show-menu > .language-menu {
+  display: inline-block;
+}
+
+.language.show-menu > .language-button > img {
+  transform: rotate(-90deg);
+}
+
+.language-menu > div {
+  padding: 2px;
+  transition: all 100ms ease-out;
+}
+
+.language-menu > div.selected {
+  background-color: var(--maroon);
+  color: white;
 }
 
 footer > .grid {

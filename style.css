@@ -34,6 +34,7 @@ a:active {
   text-align: center;
   font-size: 16px;
   font-weight: 500; /* Medium */
+  padding: 4px 16px;
 }
 
 .pointer {
@@ -85,9 +86,9 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--lightgray); /* Background fallback? */
-  /* background-image: url("images/hero-03.png"); */
+  /* background-image: url("images/hero-03.png"); 
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   height: 925px;
   padding: 24px;
 }
@@ -102,42 +103,51 @@ nav.flex {
   width: 100%;
 }
 
+.hero h2 {
+  margin-bottom: 0;
+}
+
 .hero .card {
   padding: 0 76px 240px 0;
 }
 
+.hero .card p {
+  margin: 8px 0 24px 0;
+}
+
 .hero .btn {
   background-color: var(--ketchup);
-  /* padding: 4px, 16px; */
-  width: 126px;
-  height: 36px;
   line-height: 21px;
   letter-spacing: 0em;
+}
+
+/* -------------------------------------- */
+
+/* Campaign image ----------------------------- */
+.campaign-img {
+  /* background-image: url("images/campaign-03.png");
+  background-position: top;
+  background-repeat: no-repeat; */
+  background-color: var(--lightgray);
+  width: 100%;
+  height: 925px;
 }
 /* -------------------------------------- */
 
 /* Campaign ----------------------------- */
-.campaign {
-  background-color: var(--lightgray);
-  /* background-image: url("images/campaign-03.png"); */
-  background-position: top;
-  background-repeat: no-repeat;
-  padding-top: 925px;
-}
-
 .campaign > h2 {
   font-size: 20px;
   font-weight: 600; /* Semi-bold */
   margin: 75px 0 5px 0;
 }
 
-.campaign > input[name="email"],
-.campaign > label {
+input[name="email"],
+label {
   font-size: 14px;
   font-weight: 400; /* Semi-bold */
 }
 
-.campaign > input[name="email"] {
+input[name="email"] {
   border: 1px solid var(--offblack);
   padding: 0 10px;
   width: 215px;
@@ -152,11 +162,13 @@ nav.flex {
   margin: 0 0 24px 0;
 }
 
-.campaign .btn {
+.campaign .btn,
+.competition .btn {
+  display: inline-block;
   background-color: var(--maroon);
-  /* padding: 4px, 16px; */
-  width: 126px;
-  height: 36px;
+  width: fit-content;
+  /* width: 126px;
+  height: 36px; */
   line-height: 21px;
   letter-spacing: 0em;
   margin-top: 4px;
@@ -205,9 +217,6 @@ nav.flex {
   background-color: transparent;
   color: var(--maroon);
   border: 1px solid var(--maroon);
-  /* padding: 4px, 16px; */
-  width: 80px;
-  height: 36px;
   line-height: 21px;
   letter-spacing: 0em;
 }
@@ -230,6 +239,13 @@ footer h3 {
   margin-block-end: 0;
 }
 
+footer > .grid {
+  /* grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); */
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Footer: Language menu ----------------------------- */
 .language {
   position: relative;
 }
@@ -251,10 +267,12 @@ footer h3 {
 }
 
 .language-menu {
+  list-style-type: none;
   display: none;
   position: absolute;
-  bottom: 12px;
+  bottom: -3px;
   left: 76px;
+  padding: 0;
 }
 
 .language.show-menu > .language-menu {
@@ -265,25 +283,18 @@ footer h3 {
   transform: rotate(-90deg);
 }
 
-.language-menu > div {
+.language-menu > li {
   padding: 2px;
   transition: all 100ms ease-out;
 }
 
-.language-menu > div.selected {
+.language-menu > li.selected {
   background-color: var(--maroon);
   color: white;
-}
-
-footer > .grid {
-  /* grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); */
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
 }
 /* -------------------------------------- */
 
 /* Once upon ----------------------------- */
-
 .once-upon-container {
   width: 100%;
   display: flex;

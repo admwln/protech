@@ -68,16 +68,21 @@
       <div class="once-upon-img-top"></div>
     </div>
   </section>
+  <div class="campaign-img">
+  </div>
   <section class="campaign flex column">
+    <img src="" alt="">
     <h2>
       Håll dig uppdaterad för framtida äventyr
     </h2>
     <p>
       Anmäl dig till vårt nyhetsbrev och få 10% rabatt på din nästa beställning
     </p>
-    <label for="campaign-email">E-post</label>
-    <input type="text" name="email" id="campaign-email" placeholder="namn.namnsson@gmail.com">
-    <button class="btn">Skicka</button>
+    <form action="" class="flex column">
+      <label for="campaign-email">E-post</label>
+      <input type="text" name="email" id="campaign-email" placeholder="namn.namnsson@gmail.com" autocomplete="on">
+      <button type="submit" class="btn">Skicka</button>
+    </form>
   </section>
   <section class="products large flex column">
     <h2>Protech TrailBlaze 2024</h2>
@@ -113,7 +118,16 @@
       <button class="btn more">Se fler</button>
     </div>
   </section>
-  <section class="reminder flex column"></section>
+  <section class="competition flex column">
+    <h2>
+      Vinn produkter från ProTech TrailBlaze
+    </h2>
+    <form autocomplete="on" action="" class="flex column">
+      <label for="competition-email">E-post</label>
+      <input type="text" name="email" id="competition-email" placeholder="namn.namnsson@gmail.com" autocomplete="on">
+      <button type="submit" class="btn">Skicka</button>
+    </form>
+  </section>
   <footer class="flex column">
     <h2>ProTech</h2>
     <div class="language">
@@ -121,10 +135,10 @@
         <span>Språk</span>
         <img src="images/arrow-down.svg" alt="" />
       </button>
-      <div class="language-menu pointer flex column">
-        <div class="swedish selected">Svenska</div>
-        <div class="english">English</div>
-      </div>
+      <ul class="language-menu pointer flex column">
+        <li class="swedish selected">Svenska</li>
+        <li class="english">English</li>
+      </ul>
     </div>
     <div class="grid">
       <div class="flex column">

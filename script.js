@@ -7,13 +7,15 @@ langBtn.addEventListener("click", () => {
 });
 
 // Select language on click
-const langOptions = document.querySelectorAll(".language-menu > div");
-//console.log(langOptions);
+const langOptions = document.querySelectorAll(".language-menu li");
 
 langOptions.forEach((langOption) => {
   langOption.addEventListener("click", () => {
     langOptions.forEach((option) => {
       option.classList.toggle("selected");
     });
+    setTimeout(() => {
+      langContainer.classList.toggle("show-menu");
+    }, 300);
   });
 });

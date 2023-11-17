@@ -176,10 +176,16 @@ input[name="email"] {
 /* -------------------------------------- */
 
 /* Products ------------------------------ */
+
 .products-container {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 16px;
+  margin-bottom: 32px;
+}
+
+.desktop-only {
+  display: none;
 }
 
 .img-container {
@@ -219,6 +225,8 @@ input[name="email"] {
   border: 1px solid var(--maroon);
   line-height: 21px;
   letter-spacing: 0em;
+  width: 80px;
+  align-self: center;
 }
 /* -------------------------------------- */
 
@@ -299,8 +307,9 @@ footer > .grid {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
   padding: 24px 0px;
   gap: 12px;
 }
@@ -308,17 +317,17 @@ footer > .grid {
 .once-upon-text {
   width: calc(44% - 12px);
   margin-left: 24px;
+  position: relative;
 }
 
 .once-upon-text h2 {
   margin: unset;
-  width: 75%;
+  margin-right: 12px;
 }
 
 .once-upon-img-container {
-  position: relative;
   width: 56%;
-  height: 290px;
+  height: 279px;
   background-color: var(--lightgray);
   z-index: 1;
   /* background-image: url("images/solcell_preview1_s.png"); */
@@ -329,10 +338,67 @@ footer > .grid {
 .once-upon-img-top {
   position: absolute;
   z-index: 2;
-  width: 162px;
-  height: 162px;
+  width: 41vw;
+  height: 41vw;
   background-color: var(--darkergray);
-  bottom: -14%;
-  right: 60%;
+  top: 96%;
+  left: 44%;
 }
+
 /* -------------------------------------- */
+/* -----------------Media query--------------------- */
+@media screen and (min-width: 450px) {
+  section {
+    padding: 24px 148px;
+  }
+  /* ---------------Hero------------------ */
+  .hero .card {
+    padding: 0 0 250px 0;
+    width: 260px;
+    margin-left: 148px;
+  }
+  .hero {
+    align-items: flex-start;
+  }
+  .top-items a {
+    position: absolute;
+    left: 102px;
+  }
+  /*---------------Products----------------*/
+  .desktop-only {
+    display: inline-flex;
+  }
+  .img-container {
+    width: 390px;
+    height: 390px;
+  }
+  .product {
+    height: unset;
+    width: fit-content;
+  }
+  .products-container {
+    justify-content: unset;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin-bottom: 68px;
+  }
+  .products.large .products-container {
+    flex-wrap: wrap;
+  }
+  /*---------------Once upon-----------------*/
+  .once-upon-container {
+    gap: 0;
+  }
+  .once-upon-img-container {
+    width: 50%;
+    height: 910px;
+  }
+  .once-upon-text {
+    width: 50%;
+  }
+  .once-upon-img-top {
+    height: 41.6vw;
+    width: 41.6vw;
+    top: 540px;
+  }
+}

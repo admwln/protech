@@ -193,6 +193,9 @@ input[name="email"] {
   width: 100%;
   height: 100%;
 }
+.img-container > img {
+  width: 100%;
+}
 
 /* .product:nth-child(1) > .img-container,
 .product:nth-child(4) > .img-container {
@@ -369,12 +372,12 @@ footer > .grid {
     display: inline-flex;
   }
   .img-container {
-    width: 390px;
-    height: 390px;
+    width: 100%;
   }
   .product {
     height: unset;
     width: fit-content;
+    /* width: calc(33% - 24px); */
   }
   .products-container {
     justify-content: unset;

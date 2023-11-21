@@ -424,5 +424,6 @@ footer > .grid {
   /*------------------Footer------------------*/
   footer {
     padding: 45px 148px;
+    margin-top: 78px;
   }
 }

@@ -426,4 +426,23 @@ footer > .grid {
     padding: 45px 148px;
     margin-top: 78px;
   }
+  footer > .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 60px;
+  }
+  .grid > div:nth-child(1) {
+    grid-column: 1/5;
+  }
+  .grid > div:nth-child(2) {
+    grid-column: 1/4;
+  }
+  .language {
+    width: 30%;
+  }
+  footer .grid {
+    width: 70%;
+    margin: 20px 0px 55px 15vw;
+  }
 }

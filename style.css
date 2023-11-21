@@ -354,7 +354,7 @@ footer > .grid {
 /* -----------------Media query--------------------- */
 @media screen and (min-width: 450px) {
   section {
-    padding: 24px 148px;
+    padding: 123px 148px;
   }
   /* ---------------Hero------------------ */
   .hero .card {
@@ -419,5 +419,10 @@ footer > .grid {
     height: 41.6vw;
     width: 41.6vw;
     top: 540px;
+  }
+  /*------------------------------------------*/
+  /*------------------Footer------------------*/
+  footer {
+    padding: 45px 148px;
   }
 }

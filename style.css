@@ -391,6 +391,7 @@ footer > .grid {
     width: 100%;
     background-color: unset;
     min-height: unset;
+    position: relative;
   }
   .img-container > img {
     display: block;

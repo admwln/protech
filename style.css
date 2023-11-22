@@ -239,7 +239,7 @@ body > section.products.small {
 /* Footer ----------------------------- */
 footer {
   background-color: var(--lightgray);
-  padding: 60px 24px;
+  padding: 28px 24px 28px;
   flex-direction: column;
 }
 

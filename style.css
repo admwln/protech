@@ -162,6 +162,10 @@ input[name="email"] {
   margin: 0 0 24px 0;
 }
 
+.competition.flex.column {
+  margin: 24px 0px;
+}
+
 .campaign .btn,
 .competition .btn {
   display: inline-block;
@@ -175,11 +179,13 @@ input[name="email"] {
   margin-bottom: 24px;
 }
 /* -------------------------------------- */
-
 /* Products ------------------------------ */
-
 body > section.products.small.flex.column > h2 {
   margin: 54px 0px 6px;
+}
+
+body > section.products.large.flex.column > h2 {
+  margin: 12px 0px 6px;
 }
 
 body > section.products.small.flex.column > button {
@@ -257,6 +263,7 @@ body > section.products.small {
 footer {
   background-color: var(--lightgray);
   padding: 60px 24px;
+  flex-direction: column;
 }
 
 footer > h2 {
@@ -272,7 +279,6 @@ footer h3 {
 }
 
 footer > .grid {
-  /* grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); */
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
@@ -395,6 +401,9 @@ footer > .grid {
   .campaign .btn, .competition .btn {
     margin-bottom: unset; 
   }
+  .competition.flex.column {
+    margin: unset;
+}
   /*---------------------------------------*/
   /*Products-------------------------------*/
   .desktop-only {
@@ -457,6 +466,7 @@ footer > .grid {
   footer {
     padding: 45px 148px;
     margin-top: 78px;
+    flex-direction: row;
   }
   footer > .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

@@ -13,7 +13,6 @@
 }
 
 body {
-  /* background-color: var(--offwhite); */
   color: var(--maroon);
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
@@ -86,9 +85,6 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--lightgray); /* Background fallback? */
-  /* background-image: url("images/hero-03.png"); 
-  background-position: center;
-  background-repeat: no-repeat; */
   height: 925px;
   padding: 24px;
 }
@@ -125,9 +121,6 @@ nav.flex {
 
 /* Campaign image ----------------------------- */
 .campaign-img {
-  /* background-image: url("images/campaign-03.png");
-  background-position: top;
-  background-repeat: no-repeat; */
   background-color: var(--lightgray);
   width: 100%;
   height: 925px;
@@ -171,8 +164,6 @@ input[name="email"] {
   display: inline-block;
   background-color: var(--maroon);
   width: fit-content;
-  /* width: 126px;
-  height: 36px; */
   line-height: 21px;
   letter-spacing: 0em;
   margin-top: 4px;
@@ -221,20 +212,6 @@ body > section.products.small {
   width: 100%;
   display: none; /* tillfälligt utan bild */
 }
-
-/* .product:nth-child(1) > .img-container,
-.product:nth-child(4) > .img-container {
-  background-image: url("images/jacket_preview_black_v1_s.png");
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
-/* .product:nth-child(2) > .img-container,
-.product:nth-child(3) > .img-container {
-  background-image: url("images/jacket_preview_green_v1_s.png");
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 
 .product-info {
   justify-content: space-between;
@@ -359,7 +336,6 @@ footer > .grid {
   height: 279px;
   background-color: var(--lightgray);
   z-index: 1;
-  /* background-image: url("images/solcell_preview1_s.png"); */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -436,9 +412,6 @@ footer > .grid {
   .products-container:nth-child(3) {
     margin-top: 22px;
   }
-  /* .products.large .products-container {
-    flex-wrap: wrap;
-  } */
 
   /* .product-copy {
     background-color: var(--blue);
@@ -462,6 +435,7 @@ footer > .grid {
     top: 540px;
   }
   /*------------------------------------------*/
+
   /*------------------Footer------------------*/
   footer {
     padding: 45px 148px;

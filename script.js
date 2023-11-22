@@ -23,9 +23,13 @@ langOptions.forEach((langOption) => {
 // Media query
 function myFunction(x) {
   const story = document.querySelector(".story");
-  story.innerHTML = "";
+  const storyParagraphs = story.querySelectorAll("p");
+  storyParagraphs.forEach((paragraph) => {
+    paragraph.remove();
+  });
   if (x.matches) {
     // If media query matches
+    // Once upon paragraph(s)
     const paragraphOne = document.createElement("p");
     paragraphOne.innerHTML =
       "TrailBlaze är kollektionen för dig som inte backar för utmaningar. MedProTechs vision är att skapa en meningsfull och berikande upplevelse för sina kunder genom att erbjuda högkvalitativa vildmarksprodukter som förbättrar deras utomhuslivsstil. Vi strävar efter att vara en pålitlig partner för våra kunder när det gäller utrustning och teknik för äventyr i naturen.";
@@ -34,7 +38,44 @@ function myFunction(x) {
       "Vi fokuserar mest på att erbjuda produkter som inte bara uppfyller, utan överträffar sina kunders förväntningar när det gäller kvalitet och funktionalitet. Vårt sortiment inkluderar väl genomtänkta produkter, som powerbanks och vattentäta hörlurar, som är utformade för att möta de specifika behoven hos dem som älskar att spendera tid i naturen.";
     story.appendChild(paragraphOne);
     story.appendChild(paragraphTwo);
+
+    // Desktop images
+    const productSmallUrls = [
+      "/images/placeholders/image-placeholder-1.png", //Jacket BLACK
+      "/images/placeholders/image-placeholder-2.png", //Jacket BLUE
+      "/images/placeholders/image-placeholder-3.png", //Jacket YELLOW
+    ];
+
+    const productsSmallImgs = document.querySelectorAll(".products.small img");
+    productsSmallImgs.forEach((img, index) => {
+      img.src = productSmallUrls[index];
+    });
+
+    const productLargeUrls = [
+      "/images/placeholders/image-placeholder-4.png", //Jacket GREEN
+      "/images/placeholder.png", //Placeholder
+      "/images/placeholders/image-placeholder-5.png", //Spark
+      "/images/placeholders/image-placeholder-6.png", //Power bank
+      "/images/placeholders/image-placeholder-3.png", //Jacket YELLOW
+      "/images/placeholder.png", //Placeholder
+    ];
+
+    const productsLargeImgs = document.querySelectorAll(".products.large img");
+    productsLargeImgs.forEach((img, index) => {
+      img.src = productLargeUrls[index];
+    });
+
+    const onceUponImgLarge = document.createElement("img");
+    onceUponImgLarge.src = "images/placeholders/imgage-placeholder-7.png"; // Mountain
+    document
+      .querySelector(".img-container-campaign")
+      .appendChild(onceUponImgLarge);
+
+    const onceUponImgSmall = document.createElement("img");
+    onceUponImgSmall.src = "/images/placeholders/image-placeholder-4.png"; // Green jacket
+    document.querySelector(".once-upon-img-top").appendChild(onceUponImgSmall);
   } else {
+    // Once upon paragraph
     const paragraph = document.createElement("p");
     paragraph.innerHTML =
       "TrailBlaze är kollektionen för dig som inte backar för utmaningar. Med...";

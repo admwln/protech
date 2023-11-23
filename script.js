@@ -53,11 +53,11 @@ function myFunction(x) {
 
     const productLargeUrls = [
       "/images/placeholders/image-placeholder-4.png", //Jacket GREEN
-      "/images/placeholder.png", //Placeholder
+      "/images/placeholders/image-placeholder-8.png", //Jacket brown
       "/images/placeholders/image-placeholder-5.png", //Spark
       "/images/placeholders/image-placeholder-6.png", //Power bank
       "/images/placeholders/image-placeholder-3.png", //Jacket YELLOW
-      "/images/placeholder.png", //Placeholder
+      "/images/placeholders/image-placeholder-9.png", //Powerbank pro
     ];
 
     const productsLargeImgs = document.querySelectorAll(".products.large img");
@@ -74,6 +74,11 @@ function myFunction(x) {
     const onceUponImgSmall = document.createElement("img");
     onceUponImgSmall.src = "/images/placeholders/image-placeholder-4.png"; // Green jacket
     document.querySelector(".once-upon-img-top").appendChild(onceUponImgSmall);
+
+    // Campaign image
+    const campaignImg = document.createElement("img");
+    campaignImg.src = "/images/placeholders/campaign-hiker.png";
+    document.querySelector(".campaign-img").appendChild(campaignImg);
   } else {
     // Once upon paragraph
     const paragraph = document.createElement("p");

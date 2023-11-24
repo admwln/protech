@@ -32,10 +32,10 @@ function myFunction(x) {
     // Once upon paragraph(s)
     const paragraphOne = document.createElement("p");
     paragraphOne.innerHTML =
-      "TrailBlaze är kollektionen för dig som inte backar för utmaningar. MedProTechs vision är att skapa en meningsfull och berikande upplevelse för sina kunder genom att erbjuda högkvalitativa vildmarksprodukter som förbättrar deras utomhuslivsstil. Vi strävar efter att vara en pålitlig partner för våra kunder när det gäller utrustning och teknik för äventyr i naturen.";
+      "Utforska vildmarken med ProTechs senaste tillskott – Sarek X4 Series Jacket. Utrustad med avancerad teknologi, inklusive elslingor som ger långvarig värme, och ett 100% vattentätt yttre, håller denna jacka dig bekväm och skyddad oavsett väder. Dess mångsidiga design passar perfekt för alla utomhusaktiviteter, med fokus på både funktionalitet och stil.";
     const paragraphTwo = document.createElement("p");
     paragraphTwo.innerHTML =
-      "Vi fokuserar mest på att erbjuda produkter som inte bara uppfyller, utan överträffar sina kunders förväntningar när det gäller kvalitet och funktionalitet. Vårt sortiment inkluderar väl genomtänkta produkter, som powerbanks och vattentäta hörlurar, som är utformade för att möta de specifika behoven hos dem som älskar att spendera tid i naturen.";
+      "Hög kvalitet och hållbarhet är kännetecken för denna jacka, vilket gör den till det ultimata valet för äventyrsentusiaster. Upptäck naturen med självsäkerhet i ProTechs Sarek X4 Series Jacket.";
     story.appendChild(paragraphOne);
     story.appendChild(paragraphTwo);
 
@@ -65,20 +65,21 @@ function myFunction(x) {
       img.src = productLargeUrls[index];
     });
 
-    const onceUponImgLarge = document.createElement("img");
-    onceUponImgLarge.src = "images/placeholders/imgage-placeholder-7.png"; // Mountain
-    document
-      .querySelector(".img-container-campaign")
-      .appendChild(onceUponImgLarge);
+    // const onceUponImgLarge = document.createElement("img");
+    // onceUponImgLarge.src = "images/placeholders/imgage-placeholder-7.png"; // Mountain
+    // document
+    //   .querySelector(".img-container-campaign")
+    //   .appendChild(onceUponImgLarge);
 
-    const onceUponImgSmall = document.createElement("img");
+    const onceUponImgSmall = document.querySelector(".once-upon-img-top > img");
     onceUponImgSmall.src = "/images/placeholders/image-placeholder-4.png"; // Green jacket
-    document.querySelector(".once-upon-img-top").appendChild(onceUponImgSmall);
 
     // Campaign image
-    const campaignImg = document.createElement("img");
+    // const campaignImg = document.createElement("img");
+    // campaignImg.src = "/images/placeholders/campaign-hiker.png";
+    // document.querySelector(".campaign-img").appendChild(campaignImg);
+    const campaignImg = document.querySelector(".campaign-img > img");
     campaignImg.src = "/images/placeholders/campaign-hiker.png";
-    document.querySelector(".campaign-img").appendChild(campaignImg);
   } else {
     // Once upon paragraph
     const paragraph = document.createElement("p");

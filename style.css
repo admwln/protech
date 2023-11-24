@@ -137,6 +137,7 @@ nav.flex {
   background-color: var(--lightgray);
   width: 100%;
   height: 925px;
+  overflow-x: hidden;
 }
 
 .campaign-img > img {

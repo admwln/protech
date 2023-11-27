@@ -411,6 +411,7 @@ footer .protech-icon {
   margin-bottom: 120px;
   padding: 24px 0px;
   gap: 12px;
+  position: relative;
 }
 
 .once-upon-text {
@@ -427,11 +428,11 @@ footer .protech-icon {
 .once-upon-img-container {
   width: 56%;
   height: 279px;
-  background-color: var(--lightgray);
+  background-color: var(--blue);
   z-index: 1;
   background-position: center;
   overflow: hidden;
-  background-image: url(/images/placeholders/image-placeholder-7.png);
+  /* background-image: url(/images/placeholders/image-placeholder-7.png); */
   background-repeat: no-repeat;
   background-size: 120%;
 }
@@ -442,8 +443,8 @@ footer .protech-icon {
   width: 41vw;
   height: 41vw;
   background-color: var(--darkergray);
-  top: 105%;
-  left: 44%;
+  top: 69%;
+  left: 23%;
 }
 
 .img-container-campaign img {
@@ -452,6 +453,11 @@ footer .protech-icon {
 
 .story {
   width: 36vw;
+}
+
+div.story.flex.column > p {
+  overflow-y: hidden;
+  max-height: 87px;
 }
 /* -------------------------------------- */
 
@@ -668,7 +674,10 @@ footer .protech-icon {
     width: 100%;
     height: 100%;
   }
-
+  div.story.flex.column > p {
+    overflow-y: none;
+    max-height: none;
+  }
   /*------------------------------------------*/
   /*----------------Campaign image -----------*/
   .campaign-img {

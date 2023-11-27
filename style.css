@@ -204,6 +204,10 @@ input[name="email"] {
   width: 100%;
 }
 
+.campaign-media > video {
+  width: 100%;
+}
+
 .campaign-copy {
   width: 258px;
 }
@@ -563,7 +567,8 @@ footer .protech-icon {
     margin-bottom: unset;
   }
 
-  .btn.more {
+  .products.large.flex.column > .btn.more,
+  .products.small.flex.column > .btn.more {
     margin-top: 80px;
   }
 

@@ -65,21 +65,32 @@ function myFunction(x) {
       img.src = productLargeUrls[index];
     });
 
-    // const onceUponImgLarge = document.createElement("img");
-    // onceUponImgLarge.src = "images/placeholders/imgage-placeholder-7.png"; // Mountain
-    // document
-    //   .querySelector(".img-container-campaign")
-    //   .appendChild(onceUponImgLarge);
-
     const onceUponImgSmall = document.querySelector(".once-upon-img-top > img");
     onceUponImgSmall.src = "/images/placeholders/image-placeholder-4.png"; // Green jacket
 
     // Campaign image
-    // const campaignImg = document.createElement("img");
-    // campaignImg.src = "/images/placeholders/campaign-hiker.png";
-    // document.querySelector(".campaign-img").appendChild(campaignImg);
     const campaignImg = document.querySelector(".campaign-img > img");
     campaignImg.src = "/images/placeholders/campaign-hiker.png";
+
+    // Change file src for .shopping-bag img and .hamburger img on hover and active states
+    const shoppingBag = document.querySelector(".shopping-bag");
+    const hamburger = document.querySelector(".hamburger");
+    const shoppingBagImg = document.querySelector(".shopping-bag img");
+    const hamburgerImg = document.querySelector(".hamburger img");
+
+    shoppingBag.addEventListener("mouseover", () => {
+      shoppingBagImg.src = "/images/shopping-bag-hover.svg";
+    });
+    shoppingBag.addEventListener("mouseout", () => {
+      shoppingBagImg.src = "/images/shopping-bag.svg";
+    });
+
+    hamburger.addEventListener("mouseover", () => {
+      hamburgerImg.src = "/images/hamburger-hover.svg";
+    });
+    hamburger.addEventListener("mouseout", () => {
+      hamburgerImg.src = "/images/hamburger.svg";
+    });
   } else {
     // Once upon paragraph
     const paragraph = document.createElement("p");

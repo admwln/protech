@@ -70,7 +70,7 @@ function myFunction(x) {
 
     // Campaign image
     const campaignImg = document.querySelector(".campaign-img > img");
-    campaignImg.src = "/images/placeholders/campaign-hiker.png";
+    campaignImg.src = "/images/hiker-hd-desktop.jpg";
 
     // Change file src for .shopping-bag img and .hamburger img on hover and active states
     const shoppingBag = document.querySelector(".shopping-bag");

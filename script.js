@@ -99,29 +99,7 @@ function myFunction(x) {
     const campaignImg = document.querySelector(".campaign-img > img");
     campaignImg.src = "/images/hiker-hd-desktop.jpg";
 
-    // Change file src for .shopping-bag img and .hamburger img on hover and active states
-    /* const shoppingBag = document.querySelector(".shopping-bag");
-    const hamburger = document.querySelector(".hamburger");
-    const shoppingBagImg = document.querySelector(".shopping-bag img");
-    const hamburgerImg = document.querySelector(".hamburger img");
-
-    shoppingBag.addEventListener("mouseover", () => {
-      shoppingBagImg.src = "/images/shopping-bag-hover.svg";
-    });
-    shoppingBag.addEventListener("mouseout", () => {
-      shoppingBagImg.src = "/images/shopping-bag.svg";
-    });
-
-    hamburger.addEventListener("mouseover", () => {
-      hamburgerImg.src = "/images/hamburger-hover.svg";
-    });
-    hamburger.addEventListener("mouseout", () => {
-      hamburgerImg.src = "/images/hamburger.svg";
-    }); */
   } else {
-
-    
-
     // Once upon paragraph
     const paragraph = document.createElement("p");
     paragraph.innerHTML =
@@ -170,9 +148,8 @@ function showOnceUponText() {
     OnceUponBigImg.style.height = "102vw";
     OnceUponImgTop.style.width = "60vw";
     OnceUponImgTop.style.height = "60vw";
-    OnceUponImgTop.style.left = "6%";  }
-
-
+    OnceUponImgTop.style.left = "6%";  
+  }
 }
 
 // Change file src for .hamburger img on click and active state
@@ -184,9 +161,6 @@ let isClicked = false;
 
 hamburger.addEventListener("click", () => {
   if (!isClicked) {
-    /* if (x.matches) {
-
-    } */
     hamburgerImg.src = "/images/cancel.svg";
     isClicked = true;
     dropMenu.style.display = "flex";

@@ -11,14 +11,14 @@
 }
 
 @keyframes append {
-	from {
-		transform: scaleY(0);
-		opacity: 0;
-	}
-	to {
-		transform: scaleY(1);
-		opacity: 1;
-	}
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
 }
 
 * {
@@ -164,10 +164,10 @@ nav.flex {
 }
 
 .protech-typo-logo {
-  width: 100px;
+  width: 110px;
+  height: 28px;
   margin-bottom: 2px;
   margin-left: 0px;
-  height: 33px;
 }
 
 /* -------------------------------------- */
@@ -495,8 +495,8 @@ div.story.flex.column > p {
 .once-upon-onclick-container {
   margin-bottom: unset;
   padding-bottom: unset;
-  animation: append .3s linear;
-  transform-origin: 0% 100% ;
+  animation: append 0.3s linear;
+  transform-origin: 0% 100%;
 }
 
 section.once-upon-onclick-container > div > h2 {
@@ -533,18 +533,16 @@ section.once-upon-onclick-container > div > p {
     align-items: flex-start;
     background-image: url("images/watchonstone-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 77%;
     background-size: 100%;
-    height: 65vw;
-    height: 994px;
-    /* padding-bottom: 0; */
+    height: 66vw;
   }
 
   .hero .card {
     padding: 0;
     width: 350px;
     margin-left: 148px;
-    margin-bottom: 166px;
+    margin-bottom: 5vw;
     color: white;
   }
 
@@ -563,7 +561,6 @@ section.once-upon-onclick-container > div > p {
   }
 
   .protech-typo-logo {
-    width: 100px;
     margin-bottom: 2px;
     margin-left: 58px;
   }

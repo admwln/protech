@@ -93,7 +93,7 @@ function myFunction(x) {
     });
 
     const onceUponImgSmall = document.querySelector(".once-upon-img-top > img");
-    onceUponImgSmall.src = "/images/placeholders/image-placeholder-4.png"; // Green jacket
+    onceUponImgSmall.src = "/images/jacket_layers.jpg"; // Jacket layers
 
     // Campaign image
     const campaignImg = document.querySelector(".campaign-img > img");

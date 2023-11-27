@@ -32,7 +32,7 @@ function myFunction(x) {
     // Once upon paragraph(s)
     const paragraphOne = document.createElement("p");
     paragraphOne.innerHTML =
-      "Utforska vildmarken med ProTechs senaste tillskott – Sarek X4 Series Jacket. Utrustad med avancerad teknologi, inklusive elslingor som ger långvarig värme, och ett 100% vattentätt yttre, håller denna jacka dig bekväm och skyddad oavsett väder. Dess mångsidiga design passar perfekt för alla utomhusaktiviteter, med fokus på både funktionalitet och stil.";
+      "Utforska vildmarken med ProTechs senaste tillskott - Sarek X4 Series Jacket. Utrustad med avancerad teknologi, inklusive elslingor som ger långvarig värme, och ett 100% vattentätt yttre, håller denna jacka dig bekväm och skyddad oavsett väder. Dess mångsidiga design passar perfekt för alla utomhusaktiviteter, med fokus på både funktionalitet och stil.";
     const paragraphTwo = document.createElement("p");
     paragraphTwo.innerHTML =
       "Hög kvalitet och hållbarhet är kännetecken för denna jacka, vilket gör den till det ultimata valet för äventyrsentusiaster. Upptäck naturen med självsäkerhet i ProTechs Sarek X4 Series Jacket.";
@@ -119,6 +119,9 @@ function myFunction(x) {
       hamburgerImg.src = "/images/hamburger.svg";
     });
   } else {
+
+    
+
     // Once upon paragraph
     const paragraph = document.createElement("p");
     paragraph.innerHTML =
@@ -140,31 +143,60 @@ submitBtn.addEventListener("click", (e) => {
 });
 
 function showOnceUponText() {
-  // On clicking add new section and div with all content
-  const OnceUponText = document.querySelector(".story");
-  const body = document.querySelector("body");
-  const OnceUponContainer = document.querySelector(".once-upon-container");
-
-  OnceUponText.style.display = "none";
-
-  const newSection = document.createElement("section");
-  newSection.classList.add("once-upon-onclick-container");
-
-  const newDiv = document.createElement("div");
-  newDiv.innerHTML =
+  if (!x.matches) {
+    // On clicking add new section and div with all content
+    const OnceUponText = document.querySelector(".story");
+    const body = document.querySelector("body");
+    const OnceUponContainer = document.querySelector(".once-upon-container");
+  
+    OnceUponText.style.display = "none";
+  
+    const newSection = document.createElement("section");
+    newSection.classList.add("once-upon-onclick-container");
+  
+    const newDiv = document.createElement("div");
+    newDiv.innerHTML =
     "<h2>Utrustad för utmaning</h2><p>Utforska vildmarken med ProTechs senaste tillskott - Sarek X4 Series Jacket. Utrustad med avancerad teknologi, inklusive elslingor som ger långvarig värme, och ett 100% vattentätt yttre, håller denna jacka dig bekväm och skyddad oavsett väder. Dess mångsidiga design passar perfekt för alla utomhusaktiviteter, med fokus på både funktionalitet och stil. <br><br> Hög kvalitet och hållbarhet är kännetecken för denna jacka, vilket gör den till det ultimata valet för äventyrsentusiaster. Upptäck naturen med självsäkerhet i ProTechs Sarek X4 Series Jacket.</p>";
+  
+    newSection.appendChild(newDiv);
+  
+    body.insertBefore(newSection, OnceUponContainer);
+  
+    // On clicking scale once upon img
+    const OnceUponBigImg = document.querySelector(".once-upon-img-container");
+    const OnceUponImgTop = document.querySelector(".once-upon-img-top");
+  
+    OnceUponBigImg.style.width = "122vw";
+    OnceUponBigImg.style.height = "102vw";
+    OnceUponImgTop.style.width = "60vw";
+    OnceUponImgTop.style.height = "60vw";
+    OnceUponImgTop.style.left = "6%";  }
 
-  newSection.appendChild(newDiv);
 
-  body.insertBefore(newSection, OnceUponContainer);
-
-  // On clicking scale once upon img
-  const OnceUponBigImg = document.querySelector(".once-upon-img-container");
-  const OnceUponImgTop = document.querySelector(".once-upon-img-top");
-
-  OnceUponBigImg.style.width = "122vw";
-  OnceUponBigImg.style.height = "102vw";
-  OnceUponImgTop.style.width = "60vw";
-  OnceUponImgTop.style.height = "60vw";
-  OnceUponImgTop.style.left = "6%";
 }
+
+// Change file src for .hamburger img on click and active state
+const hamburger = document.querySelector(".hamburger");
+const hamburgerImg = document.querySelector(".hamburger img");
+const dropMenu = document.querySelector(".drop-menu");
+
+let isClicked = false;
+
+hamburger.addEventListener("click", () => {
+  if (!isClicked) {
+    /* if (x.matches) {
+
+    } */
+    hamburgerImg.src = "/images/cancel.svg";
+    isClicked = true;
+    dropMenu.style.display = "flex";
+    dropMenu.style.animation = "dropDown .3s ease-in-out forwards";
+    dropMenu.style.transformOrigin = "top center";
+  } else {
+    hamburgerImg.src = "/images/hamburger.svg";
+    isClicked = false;
+    dropMenu.style.display = "none";
+    /* dropMenu.style.animation = "close .3s ease-in-out backwards";
+    dropMenu.style.transformOrigin = "bottom center"; */
+  }
+});

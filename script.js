@@ -1,9 +1,12 @@
 // Show language menu on click
-const langContainer = document.querySelector(".language");
-const langBtn = document.querySelector(".language-button");
+const langContainer = document.querySelectorAll(".language");
 
-langBtn.addEventListener("click", () => {
-  langContainer.classList.toggle("show-menu");
+langContainer.forEach((langContainer) => {
+  const langBtn = langContainer.querySelector(".language-button");
+
+  langBtn.addEventListener("click", () => {
+    langContainer.classList.toggle("show-menu");
+  });
 });
 
 // Select language on click
@@ -98,7 +101,6 @@ function myFunction(x) {
     // Campaign image
     const campaignImg = document.querySelector(".campaign-img > img");
     campaignImg.src = "/images/hiker-hd-desktop.jpg";
-
   } else {
     // Once upon paragraph
     const paragraph = document.createElement("p");
@@ -126,29 +128,29 @@ function showOnceUponText() {
     const OnceUponText = document.querySelector(".story");
     const body = document.querySelector("body");
     const OnceUponContainer = document.querySelector(".once-upon-container");
-  
+
     OnceUponText.style.display = "none";
-  
+
     const newSection = document.createElement("section");
     newSection.classList.add("once-upon-onclick-container");
-  
+
     const newDiv = document.createElement("div");
     newDiv.innerHTML =
-    "<h2>Utrustad för utmaning</h2><p>Utforska vildmarken med ProTechs senaste tillskott - Sarek X4 Series Jacket. Utrustad med avancerad teknologi, inklusive elslingor som ger långvarig värme, och ett 100% vattentätt yttre, håller denna jacka dig bekväm och skyddad oavsett väder. Dess mångsidiga design passar perfekt för alla utomhusaktiviteter, med fokus på både funktionalitet och stil. <br><br> Hög kvalitet och hållbarhet är kännetecken för denna jacka, vilket gör den till det ultimata valet för äventyrsentusiaster. Upptäck naturen med självsäkerhet i ProTechs Sarek X4 Series Jacket.</p>";
-  
+      "<h2>Utrustad för utmaning</h2><p>Utforska vildmarken med ProTechs senaste tillskott - Sarek X4 Series Jacket. Utrustad med avancerad teknologi, inklusive elslingor som ger långvarig värme, och ett 100% vattentätt yttre, håller denna jacka dig bekväm och skyddad oavsett väder. Dess mångsidiga design passar perfekt för alla utomhusaktiviteter, med fokus på både funktionalitet och stil. <br><br> Hög kvalitet och hållbarhet är kännetecken för denna jacka, vilket gör den till det ultimata valet för äventyrsentusiaster. Upptäck naturen med självsäkerhet i ProTechs Sarek X4 Series Jacket.</p>";
+
     newSection.appendChild(newDiv);
-  
+
     body.insertBefore(newSection, OnceUponContainer);
-  
+
     // On clicking scale once upon img
     const OnceUponBigImg = document.querySelector(".once-upon-img-container");
     const OnceUponImgTop = document.querySelector(".once-upon-img-top");
-  
+
     OnceUponBigImg.style.width = "122vw";
     OnceUponBigImg.style.height = "102vw";
     OnceUponImgTop.style.width = "60vw";
     OnceUponImgTop.style.height = "60vw";
-    OnceUponImgTop.style.left = "6%";  
+    OnceUponImgTop.style.left = "6%";
   }
 }
 

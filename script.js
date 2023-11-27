@@ -100,7 +100,7 @@ function myFunction(x) {
     campaignImg.src = "/images/hiker-hd-desktop.jpg";
 
     // Change file src for .shopping-bag img and .hamburger img on hover and active states
-    const shoppingBag = document.querySelector(".shopping-bag");
+    /* const shoppingBag = document.querySelector(".shopping-bag");
     const hamburger = document.querySelector(".hamburger");
     const shoppingBagImg = document.querySelector(".shopping-bag img");
     const hamburgerImg = document.querySelector(".hamburger img");
@@ -117,7 +117,7 @@ function myFunction(x) {
     });
     hamburger.addEventListener("mouseout", () => {
       hamburgerImg.src = "/images/hamburger.svg";
-    });
+    }); */
   } else {
 
     

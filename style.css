@@ -216,9 +216,12 @@ header > div.top-items.flex.column > div h3 {
 /*----------------------------------------*/
 /*SVG FILES-------------------------------*/
 
-/* .hamburgerSVG:active {
-  display: none;
-} */
+.hamburgerSVG:active {
+  filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg) brightness(98%) contrast(105%);
+}
+.shoppingSVG:active {
+  filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg) brightness(98%) contrast(105%);
+}
 
 /* -------------------------------------- */
 
@@ -641,6 +644,17 @@ section.once-upon-onclick-container > div > p {
     margin-bottom: 4px;
   }
   /*----------------------------------------*/
+  /*SVG FILES Desktop-----------------------*/
+
+  .hamburgerSVG:hover {
+    filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg) brightness(98%) contrast(105%);
+  }
+
+  .shoppingSVG:hover {
+    filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg) brightness(98%) contrast(105%);
+  }
+
+  /* -------------------------------------- */
   /*---------------------------------------*/
   /*Campaign-------------------------------*/
   .campaign .btn,

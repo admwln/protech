@@ -459,6 +459,11 @@ div.story.flex.column > p {
   overflow-y: hidden;
   max-height: 87px;
 }
+
+.once-upon-onclick-container {
+  margin-bottom: unset;
+  padding-bottom: unset;
+}
 /* -------------------------------------- */
 
 /* -----------------Media query--------------------- */

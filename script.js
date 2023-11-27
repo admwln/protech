@@ -131,12 +131,11 @@ function showOnceUponText() {
   body.insertBefore(newSection, OnceUponContainer);
 
   // On clicking scale once upon img
-
   const OnceUponBigImg = document.querySelector(".once-upon-img-container");
   const OnceUponImgTop = document.querySelector(".once-upon-img-top");
 
   OnceUponBigImg.style.width = "122vw";
-  OnceUponBigImg.style.height = "409px";
+  OnceUponBigImg.style.height = "102vw";
   OnceUponImgTop.style.width = "60vw";
   OnceUponImgTop.style.height = "60vw";
   OnceUponImgTop.style.left = "6%";

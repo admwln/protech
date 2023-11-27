@@ -10,6 +10,17 @@
   --white: #fff;
 }
 
+@keyframes append {
+	from {
+		transform: scaleY(0);
+		opacity: 0;
+	}
+	to {
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}
+
 * {
   box-sizing: border-box;
 }
@@ -443,7 +454,7 @@ footer .protech-icon {
   width: 41vw;
   height: 41vw;
   background-color: var(--darkergray);
-  top: 69%;
+  top: 70%;
   left: 23%;
 }
 
@@ -463,6 +474,16 @@ div.story.flex.column > p {
 .once-upon-onclick-container {
   margin-bottom: unset;
   padding-bottom: unset;
+  animation: append .3s linear;
+  transform-origin: 0% 100% ;
+}
+
+section.once-upon-onclick-container > div > h2 {
+  margin-bottom: 4px;
+}
+
+section.once-upon-onclick-container > div > p {
+  margin-top: unset;
 }
 /* -------------------------------------- */
 
@@ -666,6 +687,7 @@ div.story.flex.column > p {
     margin-left: unset;
     padding-left: 148px;
     padding-right: 98px;
+    position: unset;
   }
   .once-upon-img-top {
     position: absolute;

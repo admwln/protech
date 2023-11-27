@@ -5,7 +5,9 @@
   --lightgray: #f7f7f7;
   --darkergray: #cacaca;
   --maroon: #872822;
+  --ketchup-dark: #c13409;
   --ketchup: #fe400f;
+  --white: #fff;
 }
 
 * {
@@ -181,7 +183,6 @@ input[name="email"] {
 .campaign .btn,
 .competition .btn {
   display: inline-block;
-  background-color: var(--maroon);
   width: fit-content;
   line-height: 21px;
   letter-spacing: 0em;
@@ -189,9 +190,14 @@ input[name="email"] {
   padding: 6px 16px 6px 16px;
 }
 
-/* .campaign > div {
-  width: 100%;
-} */
+.btn.send {
+  /*Skicka*/
+  background-color: var(--maroon);
+}
+
+.btn.send:hover {
+  background-color: var(--ketchup-dark);
+}
 
 .campaign-media {
   background-color: var(--lightgray);
@@ -216,10 +222,16 @@ input[name="email"] {
   margin: 6px 0px;
 }
 
-body > section.campaign.flex.column > div.campaign-copy > button {
+.btn.to-competition {
   background-color: var(--ketchup);
+  color: var(--maroon);
   margin-bottom: 40px;
   padding: 8px 16px 8px 16px;
+}
+
+.btn.to-competition:hover {
+  background-color: var(--ketchup-dark);
+  color: var(--white);
 }
 /* -------------------------------------- */
 /* Products ------------------------------ */
@@ -302,6 +314,11 @@ body > section.products.small {
   line-height: 21px;
   letter-spacing: 0em;
   align-self: center;
+}
+
+.products .btn:hover {
+  background-color: var(--maroon);
+  color: var(--white);
 }
 /* -------------------------------------- */
 

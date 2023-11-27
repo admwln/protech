@@ -91,3 +91,12 @@ function myFunction(x) {
 
 var x = window.matchMedia("(min-width: 450px)");
 myFunction(x); // Call listener function at run time
+
+// Prevent default when clicking submit button .send
+const submitBtn = document.querySelector(".send");
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  submitBtn.innerHTML = "Skickat!";
+  submitBtn.style.backgroundColor = "#CACACA";
+  submitBtn.style.color = "#000000";
+});

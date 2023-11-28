@@ -98,9 +98,10 @@ function myFunction(x) {
     const onceUponImgSmall = document.querySelector(".once-upon-img-top > img");
     onceUponImgSmall.src = "/images/jacket_layers.jpg"; // Jacket layers
 
-    // Campaign image
+    // Remove campaign image, use background image instead for parallax on desktop
     const campaignImg = document.querySelector(".campaign-img > img");
-    campaignImg.src = "/images/hiker-hd-desktop.jpg";
+    //campaignImg.src = "/images/hiker-hd-desktop.jpg";
+    campaignImg.remove();
   } else {
     // Once upon paragraph
     const paragraph = document.createElement("p");
@@ -178,17 +179,17 @@ hamburger.addEventListener("click", () => {
 });
 
 // Parallax on hiking img
-console.log(window.scrollY);
+// console.log(window.scrollY);
 
-if (!x.matches) {
-  window.addEventListener("scroll", function() {
-    const scrollpos = window.scrollY;
-    const imgscroll = document.querySelector(".campaign-img > img");
-  
-    if (scrollpos > 2679 && scrollpos < 3000) { 
-      imgscroll.style.transform = "scale(.8)";
-    } else {
-      imgscroll.style.transform = "scale(1)";
-    }
-  });
-}
+// if (!x.matches) {
+//   window.addEventListener("scroll", function() {
+//     const scrollpos = window.scrollY;
+//     const imgscroll = document.querySelector(".campaign-img > img");
+
+//     if (scrollpos > 2679 && scrollpos < 3000) {
+//       imgscroll.style.transform = "scale(.8)";
+//     } else {
+//       imgscroll.style.transform = "scale(1)";
+//     }
+//   });
+// }

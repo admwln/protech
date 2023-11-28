@@ -871,8 +871,14 @@ section.once-upon-onclick-container > div > p {
   /*------------------------------------------*/
   /*----------------Campaign image -----------*/
   .campaign-img {
-    height: fit-content;
+    min-height: 925px;
     width: 100%;
+    /* Parallax scrolling on desktop */
+    background-image: url("/images/m-hiker-hd.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .campaign-img > img {

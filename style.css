@@ -98,7 +98,8 @@ img.primary {
   text-align: center;
   font-size: 18px;
   font-weight: 500; /* Medium */
-  padding: 4px 16px;
+  padding: 7px 16px;
+  transition: all 500ms ease-in-out;
 }
 
 .pointer {
@@ -217,10 +218,12 @@ header > div.top-items.flex.column > div h3 {
 /*SVG FILES-------------------------------*/
 
 .hamburgerSVG:active {
-  filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg) brightness(98%) contrast(105%);
+  filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg)
+    brightness(98%) contrast(105%);
 }
 .shoppingSVG:active {
-  filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg) brightness(98%) contrast(105%);
+  filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg)
+    brightness(98%) contrast(105%);
 }
 
 /* -------------------------------------- */
@@ -315,7 +318,7 @@ input[name="email"] {
 
 .btn.to-competition {
   background-color: var(--ketchup);
-  color: var(--maroon);
+  color: var(--white);
   margin-bottom: 40px;
   padding: 8px 16px 8px 16px;
 }
@@ -647,11 +650,13 @@ section.once-upon-onclick-container > div > p {
   /*SVG FILES Desktop-----------------------*/
 
   .hamburgerSVG:hover {
-    filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg) brightness(98%) contrast(105%);
+    filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg)
+      brightness(98%) contrast(105%);
   }
 
   .shoppingSVG:hover {
-    filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg) brightness(98%) contrast(105%);
+    filter: invert(43%) sepia(82%) saturate(4958%) hue-rotate(353deg)
+      brightness(98%) contrast(105%);
   }
 
   /* -------------------------------------- */
@@ -819,7 +824,7 @@ section.once-upon-onclick-container > div > p {
     background-color: transparent;
     width: 50%;
     height: 50vw;
-    background-image: url(/images/placeholders/image-placeholder-7.png);
+    background-image: url(/images/winter.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;

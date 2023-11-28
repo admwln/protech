@@ -230,7 +230,6 @@ header > div.top-items.flex.column > div h3 {
 
 /* Campaign image ----------------------------- */
 .campaign-img {
-  background-color: var(--lightgray);
   width: 100%;
   height: 925px;
   overflow-x: hidden;
@@ -363,25 +362,29 @@ body > section.products.small {
 
 .img-container {
   width: 100%;
-  overflow: hidden;
-  height: 220px;
+  /* overflow: hidden;
+  height: 220px; */
 }
 
-.products.small.flex.column > div > div:nth-child(1) > div.img-container > img {
+div.img-container > img {
   width: 100%;
-  scale: 5.4;
+}
+
+/* .products.small.flex.column > div > div:nth-child(1) > div.img-container > img {
+  width: 100%;
+  /* scale: 5.4;
   position: relative;
   top: 31%;
-  right: 12%;
+  right: 12%; 
 }
 
 .products.small.flex.column > div > div:nth-child(2) > div.img-container > img {
   width: 100%;
-  scale: 1.7;
+  /* scale: 1.7;
   position: relative;
-  top: 12%;
-  right: 6%;
-}
+   top: 12%;
+  right: 6%;  
+} */
 
 .product-info {
   justify-content: space-between;
@@ -520,7 +523,7 @@ footer .protech-icon {
   z-index: 1;
   background-position: center;
   overflow: hidden;
-  /* background-image: url(/images/placeholders/image-placeholder-7.png); */
+  background-image: url(/images/winter.jpg);
   background-repeat: no-repeat;
   background-size: 120%;
 }
@@ -533,6 +536,11 @@ footer .protech-icon {
   background-color: var(--darkergray);
   top: 70%;
   left: 23%;
+}
+
+.once-upon-img-top > img {
+  width: 100%;
+  height: 100%;
 }
 
 .img-container-campaign img {

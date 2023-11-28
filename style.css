@@ -151,8 +151,8 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--lightgray); /* Background fallback? */
-  height: 925px;
-  padding: 0 24px 24px 24px;
+  height: 925px;/* 
+  padding: 0 24px 24px 24px; */
   background-image: url("images/m-watchonstone.jpg");
   background-repeat: no-repeat;
   background-position: 70% 50%;
@@ -161,6 +161,7 @@ header {
 .top-items {
   align-items: center;
   width: 100%;
+  background-color: var(--lightgray);
 }
 
 nav.flex {
@@ -175,7 +176,7 @@ nav.flex {
 }
 
 .hero .card {
-  padding: 0 76px 370px 0;
+  padding: 0px 76px 370px 24px;
 }
 
 .hero .card p {
@@ -204,7 +205,7 @@ nav.flex {
   width: 100%;
   column-gap: 20%;
   background-color: var(--lightgray);
-  padding: 22px 0px;
+  padding: 0px 14px 24px;
 }
 
 .drop-menu > div {

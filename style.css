@@ -153,9 +153,9 @@ header {
   background-color: var(--lightgray); /* Background fallback? */
   height: 925px;
   padding: 0 24px 24px 24px;
-  background-image: url("images/placeholders/hero-mountains.png");
+  background-image: url("images/m-watchonstone.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 70% 50%;
 }
 
 .top-items {
@@ -175,7 +175,7 @@ nav.flex {
 }
 
 .hero .card {
-  padding: 0 76px 190px 0;
+  padding: 0 76px 370px 0;
 }
 
 .hero .card p {

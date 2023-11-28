@@ -176,3 +176,19 @@ hamburger.addEventListener("click", () => {
     dropMenu.style.transformOrigin = "bottom center"; */
   }
 });
+
+// Parallax on hiking img
+console.log(window.scrollY);
+
+if (!x.matches) {
+  window.addEventListener("scroll", function() {
+    const scrollpos = window.scrollY;
+    const imgscroll = document.querySelector(".campaign-img > img");
+  
+    if (scrollpos > 2679 && scrollpos < 3000) { 
+      imgscroll.style.transform = "scale(.8)";
+    } else {
+      imgscroll.style.transform = "scale(1)";
+    }
+  });
+}

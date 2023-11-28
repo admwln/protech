@@ -232,11 +232,18 @@ header > div.top-items.flex.column > div h3 {
 .campaign-img {
   width: 100%;
   height: 925px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  overflow: hidden;
 }
 
 .campaign-img > img {
   height: 100%;
+  width: auto;
+  position: relative;
+  right: 100%;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  transform: scale(1);
 }
 /* -------------------------------------- */
 
@@ -610,9 +617,9 @@ section.once-upon-onclick-container > div > p {
     color: white;
   }
 
-  .top-items {
+  /* .top-items {
     position: sticky;
-  }
+  } */
 
   .top-items a {
     position: absolute;
@@ -869,6 +876,7 @@ section.once-upon-onclick-container > div > p {
 
   .campaign-img > img {
     width: 100%;
+    position: unset;
   }
   /*------------------------------------------*/
 

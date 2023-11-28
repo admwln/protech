@@ -240,7 +240,7 @@ header > div.top-items.flex.column > div h3 {
   height: 100%;
   width: auto;
   position: relative;
-  right: 100%;
+  right: 14%;
   transition: transform 0.3s ease;
   transform-origin: center center;
   transform: scale(1);

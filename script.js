@@ -73,18 +73,18 @@ function myFunction(x) {
     });
 
     const productLargeUrls = [
-      "/images/powerbank_1.jpg", // Powerbank
-      "/images/watch_pro_1.jpg", // Watch pro
-      "/images/jacket_basic_1.jpg", // Jacket basic
-      "/images/watch_basic_1.jpg", // Watch basic
-      "/images/jacket_pro_1.jpg", // Jacket pro
       "/images/powerbank_pro_1.jpg", //Powerbank pro
-      "/images/powerbank_2.jpg", // Powerbank
-      "/images/watch_pro_2.jpg", // Watch pro
-      "/images/jacket_basic_2.jpg", // Jacket basic
-      "/images/watch_basic_2.jpg", // Watch basic
-      "/images/jacket_pro_2.jpg", // Jacket pro
+      "/images/watch_pro_1.jpg", // Watch pro
+      "/images/jacket_pro_1.jpg", // Jacket pro
+      "/images/watch_basic_1.jpg", // Watch basic
+      "/images/jacket_basic_1.jpg", // Jacket basic
+      "/images/powerbank_1.jpg", // Powerbank
       "/images/powerbank_pro_2.jpg", //Powerbank pro
+      "/images/watch_pro_2.jpg", // Watch pro
+      "/images/jacket_pro_2.jpg", // Jacket pro
+      "/images/watch_basic_2.jpg", // Watch basic
+      "/images/jacket_basic_2.jpg", // Jacket basic
+      "/images/powerbank_2.jpg", // Powerbank
     ];
 
     const productsLargeImgs = document.querySelectorAll(

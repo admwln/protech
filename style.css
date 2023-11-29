@@ -239,9 +239,13 @@ header > div.top-items.flex.column > div h3 {
   height: 925px;
   /* overflow-x: hidden; */
   overflow: hidden;
+  background-image: url("/images/m-hiker-hd.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.campaign-img > img {
+/* .campaign-img > img {
   height: 100%;
   width: auto;
   position: relative;
@@ -249,7 +253,7 @@ header > div.top-items.flex.column > div h3 {
   transition: transform 0.3s ease;
   transform-origin: center center;
   transform: scale(1);
-}
+} */
 /* -------------------------------------- */
 
 /* Campaign ----------------------------- */
@@ -681,7 +685,7 @@ section.once-upon-onclick-container > div > p {
   }
 
   /* -------------------------------------- */
-  /*---------------------------------------*/
+
   /*Campaign-------------------------------*/
   .campaign .btn,
   .competition .btn {
@@ -879,7 +883,7 @@ section.once-upon-onclick-container > div > p {
     min-height: 925px;
     width: 100%;
     /* Parallax scrolling on desktop */
-    background-image: url("/images/m-hiker-hd.jpg");
+    background-image: url("/images/hiker-hd-desktop.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

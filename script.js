@@ -32,6 +32,12 @@ function myFunction(x) {
   });
   if (x.matches) {
     // If media query matches
+
+    // Hero card paragraph
+    const heroParagraph = document.querySelector(".hero .card p");
+    heroParagraph.innerHTML =
+      "För att fira lanseringen av vår nya kollektion lottar ut produkter till ett värde av 50 000 kr. Ta chansen att bli utrustad för dina utmaningar.";
+
     // Once upon paragraph(s)
     const paragraphOne = document.createElement("p");
     paragraphOne.innerHTML =
@@ -99,10 +105,15 @@ function myFunction(x) {
     onceUponImgSmall.src = "/images/jacket_layers.jpg"; // Jacket layers
 
     // Remove campaign image, use background image instead for parallax on desktop
-    const campaignImg = document.querySelector(".campaign-img > img");
+    //const campaignImg = document.querySelector(".campaign-img > img");
     //campaignImg.src = "/images/hiker-hd-desktop.jpg";
     campaignImg.remove();
   } else {
+    // Hero card paragraph
+    const heroParagraph = document.querySelector(".hero .card p");
+    heroParagraph.innerHTML =
+      "Vi lottar ut produkter från vår nya kollektion till ett värde av 50 000 kr";
+
     // Once upon paragraph
     const paragraph = document.createElement("p");
     paragraph.innerHTML =

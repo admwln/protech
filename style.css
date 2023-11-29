@@ -859,11 +859,11 @@ section.once-upon-onclick-container > div > p {
   }
   .once-upon-img-top {
     position: absolute;
-    width: 33vw;
-    height: 33vw;
+    width: 30vw;
+    height: 30vw;
     top: unset;
-    bottom: -13vw;
-    left: 23vw;
+    bottom: -4vw;
+    left: 26vw;
   }
   .once-upon-img-top > img {
     width: 100%;
@@ -910,5 +910,15 @@ section.once-upon-onclick-container > div > p {
     column-gap: 50px;
     width: 65%;
     margin: 20px 0px 180px 15vw;
+  }
+}
+
+/* Min-width 1500px */
+@media screen and (min-width: 1500px) {
+  .once-upon-img-top {
+    width: 33vw;
+    height: 33vw;
+    bottom: -13vw;
+    left: 23vw;
   }
 }

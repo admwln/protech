@@ -107,7 +107,7 @@ function myFunction(x) {
     // Remove campaign image, use background image instead for parallax on desktop
     //const campaignImg = document.querySelector(".campaign-img > img");
     //campaignImg.src = "/images/hiker-hd-desktop.jpg";
-    campaignImg.remove();
+    //campaignImg.remove();
   } else {
     // Hero card paragraph
     const heroParagraph = document.querySelector(".hero .card p");

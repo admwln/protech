@@ -665,7 +665,7 @@ section.once-upon-onclick-container > div > p {
     position: fixed;
     z-index: 100;
     /* top: 8%; */
-    top: 3vw;
+    top: 60px;
   }
 
   .drop-menu > div {

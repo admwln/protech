@@ -17,9 +17,9 @@ langOptions.forEach((langOption) => {
     langOptions.forEach((option) => {
       option.classList.toggle("selected");
     });
-    setTimeout(() => {
-      langContainer.classList.toggle("show-menu");
-    }, 300);
+    // setTimeout(() => {
+    //   langContainer.classList.toggle("show-menu");
+    // }, 300);
   });
 });
 
